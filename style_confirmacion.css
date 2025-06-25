@@ -1,0 +1,32 @@
+main{
+text-align: center;
+}
+
+.v_inicio, .e404{
+    background:linear-gradient(to bottom, #785adb 5%, #492dad 100%);
+	background-color:#785adb;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.v_inicio:hover, .e404:hover{
+    background:linear-gradient(to bottom, #492dad 5%, #785adb 100%);
+	background-color:#492dad;
+
+}
+
+.v_inicio:active, .e404:active{
+    position:relative;
+	top:1px;
+}
+
+.v_inicio, .e404 {
+    transition: all 0.3s; /* Transición suave de 0.3 segundos */
+}

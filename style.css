@@ -1,0 +1,78 @@
+
+
+/* Estilos para títulos h1 */
+h1 {
+  border: 10px solid #795ADB;
+  color: #ffffff;
+  text-align: center;
+  background-color: #5AB7DB;
+}
+
+/* Contenedor de texto del álbum */
+.centrar_texto_album {
+  display: flex;
+  padding: 10px;
+}
+
+/* Estilos para imágenes dentro del contenedor del álbum */
+.centrar_texto_album img {
+  border: 20px solid rgb(172, 40, 40);
+  border-radius: 10px;
+}
+
+/* Texto principal */
+.texto_inicio {
+  text-align: center;
+}
+
+/* Títulos h2 dentro de texto_inicio */
+.texto_inicio h2 {
+  font-size: 50px;
+}
+
+/* Estilos para enlaces */
+a {
+  display:block;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: underline;
+  border: 2px solid #795ADB;
+  background-color: #795ADB;
+}
+
+/*centrar el boton para acceder a la pagina de vinilo*/
+nav{
+
+  text-align: center;
+
+}
+
+
+/* DISEÑO DE LOS BOTONES LINK:https://www.bestcssbuttongenerator.com */
+
+.boton_vinilo {
+	background:linear-gradient(to bottom, #785adb 5%, #492dad 100%);
+	background-color:#785adb;
+	border-radius:28px;
+	border:1px solid #785adb;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+  font-size: 20px;
+  text-align: center;
+    
+}
+.boton_vinilo:hover {
+	background:linear-gradient(to bottom, #492dad 5%, #785adb 100%);
+	background-color:#492dad;
+}
+.boton_vinilo:active {
+	position:relative;
+	top:1px;
+}

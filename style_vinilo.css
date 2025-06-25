@@ -1,0 +1,104 @@
+
+/*titulo de la pagina*/
+.margen {
+    border-color: #795ADB;
+    border-style: solid;
+    border-width: 10px;
+    color: #ffffff;
+    background-color: #5AB7DB;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+
+
+/*alinear el titulo en el medio*/
+.titulo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin: 0;
+}
+
+.contenido_principal{
+
+    display: flex;
+
+}
+
+/*acomoda la imagen*/
+.contenido_principal img {
+    height: auto;
+    width: 800px;
+
+}
+
+
+/*reserva tu vinilo*/
+.texto_inicio2 {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.texto_inicio2 h2{
+
+    text-align: center;
+    font-size: 50px;
+
+}
+
+/* DISEÑO DE LOS BOTONES LINK:https://www.bestcssbuttongenerator.com */
+
+.boton_reserva {
+	background:linear-gradient(to bottom, #785adb 5%, #492dad 100%);
+	background-color:#785adb;
+	border-radius:28px;
+	border:1px solid #785adb;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+    margin-top: 100px;
+    font-size: 50px;
+}
+.boton_reserva:hover {
+	background:linear-gradient(to bottom, #492dad 5%, #785adb 100%);
+	background-color:#492dad;
+}
+.boton_reserva:active {
+	position:relative;
+	top:1px;
+}
+
+.volver_inicio {
+	background-color:#785adb;
+	border-radius:28px;
+	border:2px solid #785adb;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:19px;
+	font-weight:bold;
+	padding:7px 12px;
+	text-decoration:none;
+    margin-left: 10px;
+}
+.volver_inicio:hover {
+	background-color:#492dad;
+}
+.volver_inicio:active {
+	position:relative;
+	top:1px;
+}
