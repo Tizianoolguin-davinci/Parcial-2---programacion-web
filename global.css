@@ -22,7 +22,7 @@
     text-decoration: underline;
   }
   
-  p {
+  p, label {
     font-family: 'descripcion';
     font-size: large;
   }

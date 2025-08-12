@@ -22,22 +22,19 @@
             <h4>Porfavor detallanos tus datos para confirmar la reserva</h4>
             
             <article>
-
-                <form method="get" action="confirmacion.html"></form>
-                <p>Nombre Completo</p>
-                <input type="text" name="Nombre Completo"id="">
-                <p>Fecha de Nacimiento</p>
-                <input type="text" name="Fecha" id="">
-                <p>Dejanos un breve mensaje de porque queres el disco</p>
-                <textarea name="" id="" cols="100" rows="11"></textarea>
-
-
-            </article>    
-
-            <nav>
-                <a href="confirmacion.html" class="boton_enviar">ENVIAR</a>
-
-            </nav>
+                <form method="get" action="confirmacion.html" class="formulario_datos">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" name="nombre" id="nombre" required>
+            
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" name="fecha" id="fecha" required>
+            
+                    <label for="mensaje">Dejanos un breve mensaje de por qué querés el disco</label>
+                    <textarea name="mensaje" id="mensaje" cols="100" rows="11" required></textarea>
+            
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </article>
 
         </section>
         
