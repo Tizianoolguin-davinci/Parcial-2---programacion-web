@@ -1,5 +1,3 @@
-
-
 /* Estilos para títulos h1 */
 h1 {
   border: 10px solid #795ADB;
@@ -11,18 +9,31 @@ h1 {
 /* Contenedor de texto del álbum */
 .centrar_texto_album {
   display: flex;
-  padding: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* Estilos para imágenes dentro del contenedor del álbum */
+/* Imagen del álbum */
+.centrar_texto_album figure {
+  flex: 1 1 320px;
+  max-width: 450px;
+}
+
 .centrar_texto_album img {
   border: 20px solid rgb(172, 40, 40);
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Texto principal */
 .texto_inicio {
   text-align: center;
+  flex: 1 1 320px;
+  max-width: 600px;
 }
 
 /* Títulos h2 dentro de texto_inicio */
@@ -32,7 +43,7 @@ h1 {
 
 /* Estilos para enlaces */
 a {
-  display:block;
+  display: block;
   text-align: center;
   font-size: 30px;
   color: #ffffff;
@@ -41,38 +52,77 @@ a {
   background-color: #795ADB;
 }
 
-/*centrar el boton para acceder a la pagina de vinilo*/
-nav{
-
+/* Centrar el botón para acceder a la página de vinilo */
+nav {
   text-align: center;
-
+  padding-bottom: 1.5rem;
 }
 
-
-/* DISEÑO DE LOS BOTONES LINK:https://www.bestcssbuttongenerator.com */
-
+/* Botón vinilo */
 .boton_vinilo {
-	background:linear-gradient(to bottom, #785adb 5%, #492dad 100%);
-	background-color:#785adb;
-	border-radius:28px;
-	border:1px solid #785adb;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Trebuchet MS;
-	font-size:17px;
-	font-weight:bold;
-	padding:16px 31px;
-	text-decoration:none;
+  background: linear-gradient(to bottom, #785adb 5%, #492dad 100%);
+  background-color: #785adb;
+  border-radius: 28px;
+  border: 1px solid #785adb;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Trebuchet MS;
   font-size: 20px;
+  font-weight: bold;
+  padding: 16px 31px;
+  text-decoration: none;
   text-align: center;
-    
 }
 .boton_vinilo:hover {
-	background:linear-gradient(to bottom, #492dad 5%, #785adb 100%);
-	background-color:#492dad;
+  background: linear-gradient(to bottom, #492dad 5%, #785adb 100%);
+  background-color: #492dad;
 }
 .boton_vinilo:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
+}
+
+/* Iframe de Spotify responsive */
+.centrar_texto_album iframe {
+  width: 100% !important;
+  max-width: 100%;
+  height: 352px;
+  border-radius: 12px;
+}
+
+/* ---------------------- */
+/*   ESTILOS RESPONSIVE   */
+/* ---------------------- */
+
+@media (max-width: 768px) {
+  .centrar_texto_album {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .texto_inicio h2 {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 1.1rem;
+  }
+
+  .boton_vinilo {
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .texto_inicio h2 {
+    font-size: 1.6rem;
+  }
+
+  .boton_vinilo {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
 }

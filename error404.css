@@ -1,15 +1,48 @@
-.error404_descripcion{
-
-    text-align: center;
-
-
-
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #5AB7DB;  
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;      
+    padding: 1.5rem 0;
 }
 
-img{
+/* Contenedor principal */
+.error404_descripcion {
+    text-align: center;
+    width: 100%;
+    max-width: 480px;
+    padding: 1.5rem 1rem 2.5rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
 
+/* Títulos */
+.error404_descripcion h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.error404_descripcion h2 {
+    margin-top: 0;
+}
+
+/* Imagen */
+.error404_descripcion figure {
+    margin: 1.5rem auto 0;
+}
+
+.error404_descripcion img {
     height: auto;
-    max-width: 600px;
-    margin-top: auto;
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+}
 
+@media (min-width: 600px) {
+    body {
+        align-items: center;
+    }
 }

@@ -1,24 +1,80 @@
-h1{
-
+h1 {
     border: 10px solid #795ADB;
     color: #ffffff;
     text-align: center;
     background-color: #5AB7DB;
 }
 
-.formulario_descripcion{
-
+.formulario_descripcion {
     text-align: center;
     font-size: 30px;
-
+    padding: 1rem;
 }
 
 .formulario_datos {
     display: flex;
     flex-direction: column;
     max-width: 700px;
-    align-items: center;
+    width: 100%;
+    align-items: stretch;
     gap: 30px;
-    margin: auto;
+    margin: 0 auto 2rem auto;
+    box-sizing: border-box;
 }
 
+/* Inputs y textarea ocupan ancho completo en celu */
+.formulario_datos label {
+    align-self: flex-start;
+}
+
+.formulario_datos input,
+.formulario_datos textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Botón centrado */
+.formulario_datos button {
+    align-self: center;
+    background: linear-gradient(to bottom, #785adb 5%, #492dad 100%);
+    background-color: #785adb;
+    border-radius: 28px;
+    border: 1px solid #785adb;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.formulario_datos button:hover {
+    background: linear-gradient(to bottom, #492dad 5%, #785adb 100%);
+}
+
+/* ---------------------- */
+/*   ESTILOS RESPONSIVE   */
+/* ---------------------- */
+
+@media (max-width: 768px) {
+    .formulario_descripcion {
+        font-size: 1.2rem;
+    }
+
+    .formulario_datos {
+        padding: 0 1rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario_descripcion h2 {
+        font-size: 1.4rem;
+    }
+
+    .formulario_descripcion h4 {
+        font-size: 1rem;
+    }
+}

@@ -1,5 +1,4 @@
 
-/*titulo de la pagina*/
 .margen {
     border-color: #795ADB;
     border-style: solid;
@@ -8,97 +7,150 @@
     background-color: #5AB7DB;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
-    height: 50px;
+    min-height: 60px;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
-
-/*alinear el titulo en el medio*/
-.titulo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.titulo {
     color: white;
     margin: 0;
+    text-align: center;
 }
 
-.contenido_principal{
+/* Botón "volver" dentro del header */
+.volver_inicio {
+    position: absolute;
+    left: 10px;
+    background-color:#785adb;
+    border-radius:28px;
+    border:2px solid #785adb;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:16px;
+    font-weight:bold;
+    padding:7px 12px;
+    text-decoration:none;
+}
 
+.volver_inicio:hover {
+    background-color:#492dad;
+}
+
+/* ============================= */
+/* CONTENIDO PRINCIPAL */
+/* ============================= */
+
+.contenido_principal {
     display: flex;
-
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
-/*acomoda la imagen*/
+/* Imagen del vinilo */
 .contenido_principal img {
-    height: auto;
     width: 800px;
-
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-
-/*reserva tu vinilo*/
+/* Texto del lado derecho */
 .texto_inicio2 {
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-}
-
-.texto_inicio2 h2{
-
+    max-width: 700px;
     text-align: center;
-    font-size: 50px;
-
 }
 
-/* DISEÑO DE LOS BOTONES LINK:https://www.bestcssbuttongenerator.com */
+.texto_inicio2 h2 {
+    font-size: 50px;
+}
+
+/* ============================= */
+/* BOTÓN RESERVAR */
+/* ============================= */
 
 .boton_reserva {
 	background:linear-gradient(to bottom, #785adb 5%, #492dad 100%);
 	background-color:#785adb;
 	border-radius:28px;
 	border:1px solid #785adb;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Trebuchet MS;
-	font-size:17px;
 	font-weight:bold;
 	padding:16px 31px;
 	text-decoration:none;
-    margin-top: 100px;
-    font-size: 50px;
+    margin-top: 60px;
+    font-size: 40px;
 }
 .boton_reserva:hover {
 	background:linear-gradient(to bottom, #492dad 5%, #785adb 100%);
 	background-color:#492dad;
 }
-.boton_reserva:active {
-	position:relative;
-	top:1px;
-}
 
-.volver_inicio {
-	background-color:#785adb;
-	border-radius:28px;
-	border:2px solid #785adb;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Trebuchet MS;
-	font-size:19px;
-	font-weight:bold;
-	padding:7px 12px;
-	text-decoration:none;
-    margin-left: 10px;
-}
-.volver_inicio:hover {
-	background-color:#492dad;
-}
-.volver_inicio:active {
-	position:relative;
-	top:1px;
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+
+@media (max-width: 600px) {
+
+    /* Header más prolijo en columna */
+    .margen {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+        min-height: auto;
+        gap: 0.5rem;
+        box-sizing: border-box;
+    }
+
+    .titulo {
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* El botón deja de ser absoluto y se acomoda solo */
+    .volver_inicio {
+        position: static;
+        align-self: center;
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin: 0;
+    }
+
+    .contenido_principal {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .texto_inicio2 h2 {
+        font-size: 28px;
+    }
+
+    .texto_inicio2 p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .boton_reserva {
+        font-size: 24px;
+        width: 100%;
+        max-width: 260px;
+        padding: 12px 20px;
+    }
 }
