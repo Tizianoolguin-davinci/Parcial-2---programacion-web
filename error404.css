@@ -1,15 +1,26 @@
 .error404_descripcion{
-
     text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
+.error404_descripcion h1 {
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    margin: 0;
+}
 
-
+.error404_descripcion h2 {
+    font-size: clamp(1.25rem, 3.5vw, 1.85rem);
+    margin: 0;
 }
 
 img{
-
     height: auto;
-    max-width: 600px;
-    margin-top: auto;
-
+    max-width: min(100%, 600px);
+    margin: 0 auto;
+    display: block;
 }

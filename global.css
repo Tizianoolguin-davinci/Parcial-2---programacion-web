@@ -1,35 +1,53 @@
-
 @font-face {
     font-family: 'descripcion';
     src: url('fuentes/Rolie-Twily.ttf') format('truetype');
 }
-  
-  body {
+
+body {
     background-image: url("https://img.freepik.com/fotos-premium/fondo-textura-pared-cemento-azul_34836-2782.jpg?semt=ais_hybrid&w=740");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #000000;
-  }
-  
-  h1, h2, h3 {
+    line-height: 1.6;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
     font-family: "Merriweather", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-variation-settings: "wdth" 100;
     text-decoration: underline;
-  }
-  
-  p, label {
+}
+
+p, label {
     font-family: 'descripcion';
     font-size: large;
-  }
-  
+}
 
-  ::selection {
+::selection {
     background-color: #795ADB;
     color: rgb(255, 255, 255);
-  }
-  
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        padding: 0 0.5rem;
+    }
+}
