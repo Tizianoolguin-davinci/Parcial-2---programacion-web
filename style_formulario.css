@@ -1,16 +1,26 @@
 h1{
-
     border: 10px solid #795ADB;
     color: #ffffff;
     text-align: center;
     background-color: #5AB7DB;
+    font-size: clamp(1.4rem, 4vw, 2.4rem);
+    margin: 0;
+    padding: 0.75rem 1rem;
 }
 
 .formulario_descripcion{
-
     text-align: center;
-    font-size: 30px;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    padding: 1.25rem 1rem;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
 
+.formulario_descripcion h4 {
+    margin: 0;
 }
 
 .formulario_datos {
@@ -18,7 +28,51 @@ h1{
     flex-direction: column;
     max-width: 700px;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
     margin: auto;
+    width: 100%;
+    padding: 1.5rem 1rem 2rem;
+    box-sizing: border-box;
 }
 
+.formulario_datos label {
+    align-self: flex-start;
+    font-size: clamp(1rem, 2.6vw, 1.15rem);
+}
+
+.formulario_datos input,
+.formulario_datos textarea,
+.formulario_datos button {
+    width: 100%;
+    max-width: 640px;
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    padding: 0.65rem 0.85rem;
+    box-sizing: border-box;
+}
+
+.formulario_datos textarea {
+    min-height: 200px;
+}
+
+.formulario_datos button {
+    background:linear-gradient(to bottom, #785adb 5%, #492dad 100%);
+    background-color:#785adb;
+    border-radius:18px;
+    border:1px solid #785adb;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-weight:bold;
+    padding:0.85rem 1.25rem;
+    text-decoration:none;
+}
+
+@media (max-width: 768px) {
+    h1{
+        border-width: 6px;
+    }
+
+    .formulario_datos {
+        gap: 18px;
+    }
+}

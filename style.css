@@ -1,78 +1,139 @@
-
-
 /* Estilos para títulos h1 */
 h1 {
   border: 10px solid #795ADB;
   color: #ffffff;
   text-align: center;
   background-color: #5AB7DB;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 0.75rem 1rem;
+  margin: 0;
 }
 
 /* Contenedor de texto del álbum */
 .centrar_texto_album {
   display: flex;
-  padding: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.75rem;
+  padding: 1.75rem 0;
+  justify-content: center;
 }
 
 /* Estilos para imágenes dentro del contenedor del álbum */
 .centrar_texto_album img {
-  border: 20px solid rgb(172, 40, 40);
+  border: 16px solid rgb(172, 40, 40);
   border-radius: 10px;
+  max-width: min(100%, 420px);
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 /* Texto principal */
 .texto_inicio {
   text-align: center;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 760px;
+}
+
+.texto_inicio p {
+  margin: 0 auto;
+  font-size: clamp(1rem, 2.3vw, 1.15rem);
+  line-height: 1.8;
 }
 
 /* Títulos h2 dentro de texto_inicio */
 .texto_inicio h2 {
-  font-size: 50px;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+}
+
+.texto_inicio h3 {
+  font-size: clamp(1.25rem, 3.2vw, 1.75rem);
+  margin: 0;
+}
+
+.spotify_embed {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Estilos para enlaces */
 a {
-  display:block;
+  display: block;
   text-align: center;
-  font-size: 30px;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: #ffffff;
   text-decoration: underline;
   border: 2px solid #795ADB;
   background-color: #795ADB;
+  padding: 0.85rem 1rem;
+  line-height: 1.4;
+  border-radius: 10px;
 }
 
 /*centrar el boton para acceder a la pagina de vinilo*/
-nav{
-
+nav {
   text-align: center;
-
+  margin-bottom: 1rem;
 }
-
 
 /* DISEÑO DE LOS BOTONES LINK:https://www.bestcssbuttongenerator.com */
-
 .boton_vinilo {
-	background:linear-gradient(to bottom, #785adb 5%, #492dad 100%);
-	background-color:#785adb;
-	border-radius:28px;
-	border:1px solid #785adb;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Trebuchet MS;
-	font-size:17px;
-	font-weight:bold;
-	padding:16px 31px;
-	text-decoration:none;
-  font-size: 20px;
+  background: linear-gradient(to bottom, #785adb 5%, #492dad 100%);
+  background-color: #785adb;
+  border-radius: 28px;
+  border: 1px solid #785adb;
+  display: inline-flex;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: bold;
+  padding: 0.9rem 1.75rem;
+  text-decoration: none;
   text-align: center;
-    
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
+
 .boton_vinilo:hover {
-	background:linear-gradient(to bottom, #492dad 5%, #785adb 100%);
-	background-color:#492dad;
+  background: linear-gradient(to bottom, #492dad 5%, #785adb 100%);
+  background-color: #492dad;
 }
+
 .boton_vinilo:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    border-width: 6px;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .centrar_texto_album {
+    padding: 1.25rem 0.25rem;
+  }
+
+  .centrar_texto_album img {
+    border-width: 12px;
+  }
+
+  a {
+    padding: 0.7rem 0.85rem;
+  }
+
+  .boton_vinilo {
+    width: min(100%, 26rem);
+  }
 }
